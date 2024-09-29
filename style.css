@@ -16,7 +16,8 @@
 }
 
 .item:focus {
-    outline: 1px solid lightblue;
+    outline: 2px solid lightblue;
+    border-radius: 2px;
 }
 
 .popup-btn {
@@ -77,7 +78,7 @@
     right: 110px;
     width: 20px;
     height: 20px;
-    border: 1px solid whitesmoke;
+    border: 1px solid lightgray;
     border-right: none;
     border-bottom: none;
     transform: rotate(45deg);
@@ -91,14 +92,15 @@
     overflow-x: hidden;
     top: 66px;
     right: 40px;
-    width: 300px;
-    max-height: 450px;
-    box-shadow: 0px 0px 5px 3px lightgray;
+    width: 350px;
+    max-height: 500px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 20px 3px lightgray;
 }
 
 .popup-apps {
     position: relative;
-    right: 25px;
+    right: 20px;
     display: block;
     list-style: none;
     column-count: 3;
@@ -124,7 +126,7 @@
     position: relative;
     bottom: 0px;
     left: 0px;
-    width: 300px;
+    width: 350px;
     height: 30px;
     padding-top:15px;
     text-align: center;
@@ -133,6 +135,11 @@
 
 .show-more:hover + label {
     background-color: whitesmoke;
+}
+
+.show-more:focus + label {
+    outline: 2px solid lightblue;
+    border-radius: 2px;
 }
 
 .show-more:checked + label {
@@ -145,12 +152,12 @@
 }
 
 .popup-apps-container:has(.show-more:checked) {
-    width: 310px;
+    width: 360px;
 }
 
 .popup-apps-more {
     position: relative;
-    right: 25px;
+    right: 20px;
     display: block;
     list-style: none;
     list-style-position: inside;
@@ -162,12 +169,17 @@
     display: inline-block;
     color: gray;
     text-align: center;
-    width: 300px;
+    width: 350px;
     margin: 20px 0;
 }
 
 .show-even-more:hover {
     text-decoration: underline;
+}
+
+.show-even-more:focus {
+    outline: 2px solid lightblue;
+    border-radius: 2px;
 }
 
 .popup-menu-more {
@@ -178,10 +190,15 @@
     height: 100px;
 }
 
+.popup-menu-hr {
+    background-color: #aaa;
+}
+
 .popup-menu-item {
     position: relative;
-    width: 88px;
-    height: 90px;
+    width: 98px;
+    height: 100px;
+    margin-bottom: 2px;
     text-align: center;
     text-decoration-line: none;
     display: inline-block;
@@ -208,6 +225,7 @@
 
 .popup-menu-item:focus {
     outline: 2px solid lightblue;
+    border-radius: 2px;
 }
 
 .popup-menu-item img {
